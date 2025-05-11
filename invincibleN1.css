@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex; /* usa flexbox para organizar los elementos */
+    justify-content: space-between; /* separa los elementos dentro del header */
+    align-items: center; /* alinea los elementos verticalmente */
+    padding: 5px; /* espaciado interior */
+    background: #0056b3; /* fondo oscuro con opacidad */
+    position: fixed; /* mantiene el header fijo en la parte superior */
+    width: 100%; /* ocupa todo el ancho */
+    top: 0; /* se coloca en la parte superior */
+    left: 0; /* se alinea a la izquierda */
+}
+
+.logo {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0; 
+    margin: 0;
+    transform: translateX(-37px);
+}
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+/* Contenedor principal del manga */
+.manga-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 50px 50px;
+}
+
+.manga-img {
+    width: 375px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.manga-info {
+    max-width: 500px;
+    margin-left: 40px;
+}
+
+.manga-info h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.manga-info p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.precio {
+    font-size: 22px;
+    font-weight: bold;
+    color: #c00;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #1CE65B;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: 0.2s;}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+/* Estilo del footer */
+footer {
+    text-align: center;
+    padding: 40px 50px 50px;
+    color: white;
+    background: #0056b3; /* fondo oscuro */
+}
